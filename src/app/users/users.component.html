@@ -1,0 +1,19 @@
+
+<table class="table table-bordered">
+  <thead>
+    <tr class="table-primary">
+      <th scope="col">Name</th>
+      <th scope="col">Age</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let person of users">
+      <td>{{ person.Name }}</td>
+      <td>{{ person.Age }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Toggle Content Using ngIf</h3>
+<div *ngIf="Flag; else ElseBlock">If condition displaying</div>
+<ng-template #ElseBlock> Else condition displaying </ng-template>
